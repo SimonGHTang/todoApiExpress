@@ -1,0 +1,22 @@
+{
+  "name": "todoapiexpress",
+  "version": "1.0.0",
+  "description": "express js for todo app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimonGHTang/todoApiExpress.git"
+  },
+  "author": "SimonGHTang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SimonGHTang/todoApiExpress/issues"
+  },
+  "homepage": "https://github.com/SimonGHTang/todoApiExpress#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
