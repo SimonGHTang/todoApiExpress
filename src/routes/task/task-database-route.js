@@ -18,9 +18,6 @@ router.put('/put', (req, res) => {
 	res.send('database task added');
 });
 
-router.delete('/deleteTask/:taskId', (req, res) => {
-	deleteTask(req.params.taskId);
-	res.send('task deleted from database');
-})
+router.delete('/deleteTask/:taskId', taskRouteHandler.deleteTask)
 
 module.exports = router;
