@@ -8,6 +8,5 @@ const taskDatabase = [
 		taskDescription:"newDescription"
 	}
 ]
-const updateTask = (task) => taskDatabase.splice(getTaskIndex(task.taskId), 1, task);
 
 module.exports = taskDatabase;
