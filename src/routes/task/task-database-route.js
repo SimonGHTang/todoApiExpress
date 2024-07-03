@@ -11,12 +11,8 @@ router.use(timeLog);
 
 router.get('/get', taskRouteHandler.getTaskList);
 router.get('/get/:taskId', taskRouteHandler.getTaskByTaskId);
-router.post('/post', (req, res) => {
-  res.send('About birds');
-});
-router.put('/put', (req, res) => {
-	res.send('database task added');
-});
+router.post('/post', taskRouteHandler.addTask);
+router.put('/put', taskRouteHandler.addTask);
 
 router.delete('/deleteTask/:taskId', taskRouteHandler.deleteTask)
 
