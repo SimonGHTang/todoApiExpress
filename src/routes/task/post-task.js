@@ -1,7 +1,7 @@
 const taskService = require('../../service/task/task-service.js');
 
 const postTask = (req, res) => {
-	taskService.editTask(req.body);
+	taskService.editOrAddTask(req.body);
 	res.status(200).send("task edited");
 }
 
