@@ -1,14 +1,17 @@
-const express = require('express');
-const cors = require('cors');
-const taskDatabaseRoute = require('./routes/task/task-database-route.js');
+import express from 'express';
+import cors from 'cors';
+import taskDatabaseRoute from './routes/task/task-database-route.js';
 const app = express();
 const port = 3000;
 const corOptions = { 
 	origin: "http://localhost:5173/",
 	methods: ['GET', 'PUT', 'POST', 'DELETE'],
 	allowedHeaders: ['Content-Type', 'Authorization'],
-
 }
+
+import connectDB from './service/database-connection.js';
+
+connectDB();
 
 app.use(cors(corOptions));
 app.use(express.json());

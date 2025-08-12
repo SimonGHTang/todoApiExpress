@@ -1,6 +1,7 @@
 {
   "name": "todoapiexpress",
   "version": "1.0.0",
+  "type": "module",
   "description": "express js for todo app",
   "main": "src/index.js",
   "scripts": {
@@ -10,6 +11,10 @@
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "pg": "^8.16.3",
+    "pg-hstore": "^2.3.4",
+    "pm2": "^6.0.8",
+    "sequelize": "^6.37.7"
   }
 }
