@@ -1,6 +1,6 @@
-const taskDatabase = require('./task-database.js');
-const addTask = require('./add-task.js');
-const editTask = require('./edit-task.js');
+import taskDatabase from './task-database.js';
+import addTask from './add-task.js';
+import editTask from './edit-task.js';
 
 const editOrAddTask = (task) => {
 	let taskId = task.taskId;
@@ -11,4 +11,4 @@ const editOrAddTask = (task) => {
 		editTask(task);
 }
 
-module.exports = editOrAddTask;
+export default editOrAddTask;

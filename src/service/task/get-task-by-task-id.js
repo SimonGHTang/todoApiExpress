@@ -1,4 +1,4 @@
-const taskDatabase = require('./task-database.js');
+import taskDatabase from './task-database.js';
 
 const getTaskByTaskId = (taskId) => {
 	let task = taskDatabase.find(task => taskId === task.taskId);
@@ -8,4 +8,4 @@ const getTaskByTaskId = (taskId) => {
 	return task;
 };
 
-module.exports = getTaskByTaskId;
+export default getTaskByTaskId;

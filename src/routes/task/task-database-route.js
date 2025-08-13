@@ -9,10 +9,10 @@ const timeLog = (req, res, next) => {
 }
 router.use(timeLog);
 
-// router.get('/', taskRouteHandler.getTaskList);
-// router.get('/:taskId', taskRouteHandler.getTaskByTaskId);
-// router.post('/', taskRouteHandler.postTask);
-// router.put('/', taskRouteHandler.putTask);
-// router.delete('/:taskId', taskRouteHandler.deleteTask);
+router.get('/', taskRouteHandler.getTaskList);
+router.get('/:taskId', taskRouteHandler.getTaskByTaskId);
+router.post('/', taskRouteHandler.postTask);
+router.put('/', taskRouteHandler.putTask);
+router.delete('/:taskId', taskRouteHandler.deleteTask);
 
 export default router;

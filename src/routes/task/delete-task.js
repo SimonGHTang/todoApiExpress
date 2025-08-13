@@ -1,4 +1,4 @@
-const taskService = require('../../service/task/task-service.js');
+import taskService from '../../service/task/task-service.js';
 
 const deleteTask = (req, res) => {
 	// delete the task
@@ -13,4 +13,4 @@ const deleteTask = (req, res) => {
 	}
 }
 
-module.exports = deleteTask;
+export default deleteTask;

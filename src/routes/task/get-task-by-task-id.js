@@ -1,4 +1,4 @@
-const taskService = require('../../service/task/task-service.js');
+import taskService from '../../service/task/task-service.js';
 
 const getTaskByTaskId = (req, res) => {
 	// get the task
@@ -13,4 +13,4 @@ const getTaskByTaskId = (req, res) => {
 	}
 }
 
-module.exports = getTaskByTaskId;
+export default getTaskByTaskId;

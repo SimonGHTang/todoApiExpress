@@ -1,4 +1,4 @@
-const taskService = require('../../service/task/task-service.js');
+import taskService from '../../service/task/task-service.js';
 
 const getTaskList = (req, res) => {
 	// get the task
@@ -10,4 +10,4 @@ const getTaskList = (req, res) => {
 	res.status(200).send(tasks);
 }
 
-module.exports = getTaskList;
+export default getTaskList;

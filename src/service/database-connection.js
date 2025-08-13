@@ -1,4 +1,4 @@
-// const { connectionConfig } = require("../config/connectionsConfig");
+// const { connectionConfig } from "../config/connectionsConfig");
 import { Sequelize } from 'sequelize';
 
 import User from '../model/user.js';

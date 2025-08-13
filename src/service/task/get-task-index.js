@@ -1,6 +1,6 @@
-const taskDatabase = require('./task-database');
-const getTaskByTaskId = require('./get-task-by-task-id.js');
+import taskDatabase from './task-database.js';
+import getTaskByTaskId from './get-task-by-task-id.js';
 
 const getTaskIndex = (taskId) => taskDatabase.indexOf(getTaskByTaskId(taskId));
 
-module.exports = getTaskIndex;
+export default getTaskIndex;

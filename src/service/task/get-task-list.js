@@ -1,5 +1,5 @@
-const taskDatabase = require('./task-database.js');
+import taskDatabase from './task-database.js';
 
 const getTaskList = () => taskDatabase;
 
-module.exports = getTaskList;
+export default getTaskList;

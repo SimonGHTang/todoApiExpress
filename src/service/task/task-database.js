@@ -9,4 +9,4 @@ const taskDatabase = [
 	}
 ]
 
-module.exports = taskDatabase;
+export default taskDatabase;

@@ -1,8 +1,8 @@
-const getTaskList = require('./get-task-list.js');
-const getTaskByTaskId = require('./get-task-by-task-id.js');
-const addTask = require('./add-task.js');
-const editTask = require('./edit-task.js');
-const editOrAddTask = require('./edit-or-add-task.js');
-const deleteTask = require('./delete-task.js');
+import getTaskList from './get-task-list.js';
+import getTaskByTaskId from './get-task-by-task-id.js';
+import addTask from './add-task.js';
+import editTask from './edit-task.js';
+import editOrAddTask from './edit-or-add-task.js';
+import deleteTask from './delete-task.js';
 
-module.exports = { getTaskList, getTaskByTaskId, addTask, editTask, editOrAddTask, deleteTask };
+export default { getTaskList, getTaskByTaskId, addTask, editTask, editOrAddTask, deleteTask };
