@@ -1,6 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 import taskDatabaseRoute from './routes/task/task-database-route.js';
+import dbSeeder from './seeder/db-seeder.js';
+
 const app = express();
 const port = 3000;
 const corOptions = { 
@@ -9,9 +11,7 @@ const corOptions = {
 	allowedHeaders: ['Content-Type', 'Authorization'],
 }
 
-import connectDB from './service/database-connection.js';
-
-connectDB();
+dbSeeder();
 
 app.use(cors(corOptions));
 app.use(express.json());

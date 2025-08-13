@@ -1,14 +1,8 @@
 import { Sequelize, DataTypes, Model, UUIDV4 } from 'sequelize';
 
-const sequelize = new Sequelize(`to-do-db`, `postgres`, `Wqop2190.`, { 
-	dialect: "postgres",
-	database: "to-do-db",
-	schema: "public",
-	user: "postgres",
-	password: "Wqop2190.",
-	host: "localhost",
-	port: 5432
-});
+import dbconfig from '../config/db.config.js';
+
+const sequelize = new Sequelize(`to-do-db`, `postgres`, `Wqop2190.`, dbconfig);
 
 class User extends Model {}
 
